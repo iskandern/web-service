@@ -14,3 +14,6 @@ you can download Metar library on
 
 and then install with 
 - python setup.py install
+
+you can see usage examples in files
+METAR and METAR_GET
