@@ -1,0 +1,44 @@
+form.query_form {
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid grey;
+    padding: 2rem;
+}
+
+#send_button {
+    border: 0;
+    padding: 0.7rem;
+    margin: 1rem 0;
+    color: #fff;
+    font: 1rem 'Fira Sans', sans-serif;
+    background-color: #2a8aff;
+    border-radius: 10px;
+    width: 90px;
+}
+
+#send_button:hover {
+    background-color: #0069da;
+}
+
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+    padding: 0.5rem 0;
+}
+
+input, textarea {
+    padding: 0.25rem;
+}
+
+dt {
+    font: 1rem 'Fira Sans', sans-serif;
+    padding: 0.5rem 0;
+}
+
+dl.row {
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid grey;
+    padding: 2rem;
+}

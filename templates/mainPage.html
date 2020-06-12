@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html lang="en">
+
+<link href="../static/styles.css" rel="stylesheet" />
+
+<form action="/form" method="get" class="query_form">
+  <div class="query_form">
+    <label for="icao">ICAO index: </label>
+    <input type="text" name="icao_name" id="icao" required
+           minlength="4" maxlength="4" size="4" style="text-transform:uppercase">
+  </div>
+
+  <div class="query_form">
+    <label for="weather_date">Date:</label>
+    <input type="date" id="weather_date" name="weather_date_name"
+       value="2015-01-01"
+       min="2005-01-01" max="2020-05-01">
+  </div>
+
+  <div class="query_form">
+    <label for="weather_time">Time:</label>
+    <input type="time" id="weather_time" name="weather_time_name"
+           value="12:00"
+           min="00:00" max="23:59" required>
+  </div>
+
+  <div class="query_form">
+    <input type="submit" value="Send" id="send_button">
+  </div>
+</form>
+
+</html>

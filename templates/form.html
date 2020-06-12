@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<link href="../static/styles.css" rel="stylesheet" />
+
+<dl class="row">
+  <dt class="name">ICAO:</dt>
+  <dd class="description">
+      <p>{{ icao }}</p>
+  </dd>
+
+  <dt class="name">Date:</dt>
+  <dd class="description">
+      <p>{{ date }}</p>
+  </dd>
+
+  <dt class="name">METAR decode:</dt>
+  <dd class="description"><p>
+      {% autoescape false %}
+      {{ metar }}
+      {% endautoescape %}</p>
+  </dd>
+</dl>
