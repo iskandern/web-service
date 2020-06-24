@@ -5,28 +5,67 @@
 <link href="../static/styles.css" rel="stylesheet" />
 
 <form action="/form" method="get" class="query_form">
-  <div class="query_form">
-    <label for="icao">ICAO index: </label>
-    <input type="text" name="icao_name" id="icao" required
-           minlength="4" maxlength="4" size="4" style="text-transform:uppercase">
+  <div class="flex-itm">
+      <div class="query_form">
+          <label for="dep_icao">Departure ICAO index: </label>
+          <select name="dep_icao_name" id="dep_icao">
+              <option value="KDFW">KDFW</option>
+              <option value="KPHX">KPHX</option>
+              <option value="KKKK">KKKK</option>
+          </select>
+      </div>
+
+      <div class="query_form">
+          <label for="dep_date">Departure date:</label>
+          <input type="date" id="dep_date" name="dep_date_name"
+                 value="2020-01-01"
+                 min="2005-01-01">
+      </div>
+
+      <div class="query_form">
+          <label for="dep_time">Departure time:</label>
+          <input type="time" id="dep_time" name="dep_time_name"
+                 value="12:00"
+                 min="00:00" max="23:59" required>
+      </div>
+
+      <div class="query_form">
+        <label for="airline">Airline: </label>
+        <select name="airline_name" id="airline">
+            <option value="AA">AA</option>
+            <option value="MQ">MQ</option>
+            <option value="US">US</option>
+        </select>
+      </div>
   </div>
 
-  <div class="query_form">
-    <label for="weather_date">Date:</label>
-    <input type="date" id="weather_date" name="weather_date_name"
-       value="2015-01-01"
-       min="2005-01-01" max="2020-05-01">
-  </div>
+  <div class="flex-itm">
+      <div class="query_form">
+        <label for="arr_icao">Arrival ICAO index: </label>
+        <select name="arr_icao_name" id="arr_icao">
+            <option value="KDFW">KDFW</option>
+            <option value="KPHX">KPHX</option>
+            <option value="KKKK">KKKK</option>
+        </select>
+      </div>
 
-  <div class="query_form">
-    <label for="weather_time">Time:</label>
-    <input type="time" id="weather_time" name="weather_time_name"
-           value="12:00"
-           min="00:00" max="23:59" required>
-  </div>
+      <div class="query_form">
+        <label for="arr_date">Arrival date:</label>
+        <input type="date" id="arr_date" name="arr_date_name"
+           value="2015-01-01"
+           min="2005-01-01">
+      </div>
 
-  <div class="query_form">
-    <input type="submit" value="Send" id="send_button">
+      <div class="query_form">
+        <label for="arr_time">Arrival time:</label>
+        <input type="time" id="arr_time" name="arr_time_name"
+               value="12:00"
+               min="00:00" max="23:59" required>
+      </div>
+
+      <div class="query_form">
+        <input type="submit" value="Send" id="send_button">
+      </div>
   </div>
 </form>
 

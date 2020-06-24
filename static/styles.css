@@ -3,11 +3,13 @@ form.query_form {
     margin: 2rem auto;
     border: 2px solid grey;
     padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #send_button {
     border: 0;
-    padding: 0.7rem;
+    padding: 1.1rem;
     margin: 1rem 0;
     color: #fff;
     font: 1rem 'Fira Sans', sans-serif;
@@ -34,6 +36,15 @@ input, textarea {
 dt {
     font: 1rem 'Fira Sans', sans-serif;
     padding: 0.5rem 0;
+}
+
+select {
+    width: 5.3em;
+    height: 2.7em;
+}
+
+query_form.flex-itm {
+    flex-direction: row;
 }
 
 dl.row {
