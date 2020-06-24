@@ -1,4 +1,4 @@
-# web-service
+# flight prediction based on weather web-service
 
 input data:
 - derpature and arrival icao(airport code)
